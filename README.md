@@ -14,6 +14,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npm run electron-dev `
+
+main.js中配置dev模式的端口运行
+
+### `npm run electron `
+
+当项目打包后运行该命令运行打包文件
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
