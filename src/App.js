@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useRef } from 'react';
 import './App.css';
+import { EditorPreview, EditorWrite } from './components/CustomEditor';
 
 function App() {
+
+  const editorRef = useRef(null);
+
+  function changeValue(value) {
+    editorRef.current.changeValue(value)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div 
+        style={{
+          width: "100%",
+          display: "flex",
+        }}
+      >
+        <EditorWrite changeValue={changeValue} />
+        <EditorPreview ref={editorRef}/>
+      </div>
     </div>
   );
 }
