@@ -8,7 +8,6 @@ import { useState } from "react";
 export default function EditorWrite({changeValue}, ref) {
   
   const [value, setValue] = useState("");
-  const [root, setRoot] = useState("");
   const plugins = [
     gfm(), {actions: [{
       title: "切换",

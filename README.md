@@ -22,6 +22,10 @@ main.js中配置dev模式的端口运行
 
 当项目打包后运行该命令运行打包文件
 
+### `npm run make`
+
+重新导出软件压缩包
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\

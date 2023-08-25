@@ -22,6 +22,7 @@
     "electron-dev": "electron . dev",
     "electron": "electron .",
     "start": "electron-forge start",
+    "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

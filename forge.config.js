@@ -1,6 +1,9 @@
 module.exports = {
   packagerConfig: {
     asar: true,
+    appVersion: "0.0.1",
+    name: "AI 翻译",
+    icon: "",
   },
   rebuildConfig: {},
   makers: [
